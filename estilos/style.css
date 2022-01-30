@@ -1,0 +1,150 @@
+/*selector{
+    property:value;
+}*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: peachpuff
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+
+p{
+    font-style: italic;
+    background-color: palevioletred;
+    text-align: center;
+    line-height: 1cm;
+    font-size: 15px;
+}
+
+h1{
+    text-align: center;
+
+}
+
+li{
+    padding: 40px 200px 40px 20px;
+    text-align: justify;
+    display: inline-block;
+
+}
+
+section{
+    text-align:  center;
+
+}
+
+.parrafo{
+    font-size: large;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#lorem{
+    font-size: small;
+    color: whitesmoke;
+    text-align:  left;
+}
+
+#span{
+    font-size: xx-large;
+
+}
+
+/* inicio de productos*/
+.image{
+    background-image: url("../imagenes/pan1.jpeg")
+}
+
+/*Box model*/
+h1{
+    padding: 60px;
+    padding-left: 55px;
+    border-style: dashed;
+}
+footer{
+    text-align: center;
+}
+
+article{
+    text-align: center;
+}
+.padre{
+    justify-items: center;
+    align-content: space-between;
+    width: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+    grid-template-areas:
+    "foto1 foto2"
+    "foto3 foto4"
+    ;
+}
+
+.foto1{
+    grid-area: foto1;
+}
+.foto2{
+    grid-area: foto2;
+}
+.foto3{
+    grid-area: foto3;
+}
+.foto4{
+    grid-area: foto4;
+}
+
+.footerItem{
+    background-color: pink;
+    border: 1px solid pink;
+    height: 200px;
+    flex: 1;
+}
+
+@media only screen and (max-width: 425px){
+    nav{
+        background-color: pink;
+    }
+
+     .padre{
+         display: grid;
+         grid-template-columns: 1fr ;
+         grid-template-rows: 6fr;
+         grid-template-areas:
+         "foto1"
+         "foto2"
+         "foto3"
+         "foto4"
+         ;
+     }
+
+}
+
+@media only screen and (min-width: 800px){
+    nav{
+        background-color: palevioletred;
+    }
+
+     .padre{
+         display: grid;
+         grid-template-columns: 1fr ;
+         grid-template-rows: 6fr;
+         grid-template-areas:
+         "foto1"
+         "foto2"
+         "foto3"
+         "foto4"
+         ;
+     }
+}
