@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: peachpuff
+    background-color: whitesmoke
 }
 
 nav ul li {
@@ -18,7 +18,7 @@ nav ul li {
 
 p{
     font-style: italic;
-    background-color: palevioletred;
+    background-color: rgb(238, 183, 201);
     text-align: center;
     line-height: 1cm;
     font-size: 15px;
@@ -31,13 +31,8 @@ h1{
 
 li{
     padding: 40px 200px 40px 20px;
-    text-align: justify;
-    display: inline-block;
-
-}
-
-section{
-    text-align:  center;
+    text-align: evenly;
+    display: inline-flex
 
 }
 
@@ -70,6 +65,10 @@ h1{
     padding-left: 55px;
     border-style: dashed;
 }
+div{
+border-style: solid;
+border-color: rosybrown;
+}
 footer{
     text-align: center;
 }
@@ -92,6 +91,10 @@ article{
     ;
 }
 
+h1{
+    color: rgb(238, 183, 201);
+}
+
 .foto1{
     grid-area: foto1;
 }
@@ -103,6 +106,14 @@ article{
 }
 .foto4{
     grid-area: foto4;
+}
+.foto5{
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr;
+}
+.foto6{
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr;
 }
 
 .footerItem{
@@ -148,3 +159,6 @@ article{
          ;
      }
 }
+
+
+
