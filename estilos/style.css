@@ -49,6 +49,10 @@ li{
     text-align:  left;
 }
 
+img{
+    width: 100%;
+}
+
 #span{
     font-size: xx-large;
 
