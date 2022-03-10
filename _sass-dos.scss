@@ -1,0 +1,95 @@
+$alto-box:30px;
+$ancho-box:800px;
+$gray: gray;
+$pink: pink;
+
+.box-uno{
+background-color:$gray;
+width: $ancho-box/2;
+height: $alto-box;
+}
+
+.box-dos{
+    background-color: $pink;
+    width: ($ancho-box/2)-100;
+    height: $alto-box;
+}
+
+$pastel:cupcake;
+
+p{
+    @if pastel==cupcake {
+        color: blue;
+        
+    };
+    @if pastel==dona{
+        color: purple;
+    }
+
+    @else{
+        color: brown;
+    }
+
+}
+@for $i  from 1 through 4 {
+    .caja-#{$i} {
+        width: 3em*$i;
+        background-color: rgb(12, 61, 197);
+        border: 2px solid red;
+        color: white;
+
+    }
+    
+}
+
+@each $color in blue, yellow, black {
+    #{$color}- col{
+        color:#{$color-col};
+    } 
+}
+
+@each $redes in instagram,facebook,twitter {
+    .#{$redes}- icono{
+        .#{$redes}- icono{
+            background-image: url('../imagenes/#{redes}.png');
+            width: 16px;
+            height: 16px;
+        }
+
+    }
+    
+}
+$estilos: (
+  color: #3673D9,
+  centro: center,
+  tFuente: 35px,
+  1rem : 1rem
+);
+
+div {
+  background-color: map-get($estilos, color);
+ text-align: map-get($estilos, centro);
+  padding: map-get($estilos, 1rem);
+  font-size:map-get($estilos, tFuente);
+ }
+
+ .redsocial {
+     border: 1px rebeccapurple;
+     background-color: whitesmoke;
+ }
+
+ .redsocial--nueva{
+     @extend.redsocial;
+     font-size: 30px ;
+     }
+
+ @mixin sizes($width,$height) {
+     height: $height;
+     width: $width;
+     
+ }
+
+ .box{
+     @include sizes(700px,75px);
+     background-color: orange;
+ }

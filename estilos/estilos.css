@@ -1,0 +1,162 @@
+/*selector{
+    property:value;
+}*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  color: whitesmoke;
+}
+
+header nav {
+  background-color: palevioletred;
+}
+
+body {
+  background-color: #3f3b3b;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li li {
+  padding: 40px 200px 40px 20px;
+  text-align: center;
+}
+
+p {
+  font-style: italic;
+  background-color: #e9c4d0;
+  text-align: center;
+  line-height: 1cm;
+  font-size: 16px;
+}
+
+p h1 {
+  text-align: center;
+}
+
+.parrafo {
+  font-size: large;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#lorem {
+  font-size: small;
+  color: whitesmoke;
+  text-align: left;
+}
+
+#span {
+  font-size: xx-large;
+}
+
+/* inicio de productos*/
+.image {
+  background-image: url("../imagenes/pan1.jpeg");
+}
+
+/*Box model*/
+h1 {
+  padding: 71px;
+  padding-left: 55px;
+  border-style: dashed;
+  text-align: center;
+}
+
+div {
+  border-style: solid;
+  border-color: rosybrown;
+}
+
+footer {
+  text-align: center;
+}
+
+article {
+  text-align: center;
+}
+
+.padre {
+  justify-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  width: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 2fr 2fr 2fr;
+      grid-template-rows: 2fr 2fr 2fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 5px;
+      grid-template-areas: "foto1 foto2" "foto3 foto4";
+}
+
+h1 {
+  color: #eeb7c9;
+}
+
+.foto5 {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.foto6 {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.footerItem {
+  background-color: pink;
+  border: 1px solid pink;
+  height: 200px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media only screen and (max-width: 425px) {
+  nav {
+    background-color: pink;
+  }
+  .padre {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 6fr;
+        grid-template-rows: 6fr;
+        grid-template-areas: "foto1" "foto2" "foto3" "foto4";
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  nav {
+    background-color: palevioletred;
+  }
+  .padre {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 6fr;
+        grid-template-rows: 6fr;
+        grid-template-areas: "foto1" "foto2" "foto3" "foto4";
+  }
+}
+
+section {
+  background-color: antiquewhite;
+}
+/*# sourceMappingURL=estilos.css.map */
