@@ -164,5 +164,22 @@ h1{
      }
 }
 
+/* desktop*/
+@media screen and (min-width:768px) {
+    nav{
+        background-color: pink;
+    }
 
+     .padre{
+         display: grid;
+         grid-template-columns: 1fr ;
+         grid-template-rows: 6fr;
+         grid-template-areas:
+         "foto1"
+         "foto2"
+         "foto3"
+         "foto4"
+         ;
+     }
 
+}
