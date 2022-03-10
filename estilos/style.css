@@ -77,6 +77,27 @@ footer{
     text-align: center;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+.filas {
+    float: left;
+    width: 33.33%;
+    padding: 13px;
+    min-height: 350px;
+    border: 1px solid;
+    text-align: center;
+}
+
+
+.columnas:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
 article{
     text-align: center;
 }
