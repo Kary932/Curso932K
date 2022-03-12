@@ -118,6 +118,10 @@ h1{
     color: rgb(238, 183, 201);
 }
 
+img, iframe{
+    width: 100%;
+}
+
 .foto1{
     grid-area: foto1;
 }
