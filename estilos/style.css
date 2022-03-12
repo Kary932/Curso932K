@@ -57,6 +57,10 @@ img{
     background-image: url("../imagenes/pan1.jpeg")
 }
 
+p{
+    text-align: center;
+}
+
 /*Box model*/
 h1{
     padding: 60px;
