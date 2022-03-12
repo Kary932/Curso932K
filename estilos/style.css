@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: whitesmoke
+    background-color: white
 }
 
 nav ul li {
@@ -42,12 +42,6 @@ li{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-#lorem{
-    font-size: small;
-    color: whitesmoke;
-    text-align:  left;
-}
 
 img{
     width: 100%;
