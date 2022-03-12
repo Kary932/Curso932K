@@ -26,6 +26,9 @@ nav ul li {
     }
 }
 
+img, frame{
+    width: 100%;
+}
 p{
     font-style: italic;
     background-color: rgb(233, 196, 208);
@@ -45,11 +48,6 @@ p{
 }
 
 
-#lorem{
-    font-size: small;
-    color: whitesmoke;
-    text-align:  left;
-}
 
 #span{
     font-size: xx-large;
