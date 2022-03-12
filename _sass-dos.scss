@@ -73,6 +73,9 @@ div {
   font-size:map-get($estilos, tFuente);
  }
 
+ img, iframe{
+     width: 100%;
+ }
  .redsocial {
      border: 1px rebeccapurple;
      background-color: whitesmoke;
